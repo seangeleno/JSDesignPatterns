@@ -1,4 +1,13 @@
-var o = {
+//this is known as the name space desgin pattern, by making really long name
+//we avoid using same variable more than once;
+var com = com || {};
+com.o2geek = com.o2geek || {};
+com.o2geek.packt = com.o2geek.packt || {};
+com.o2geek.packt.JSDP = com.o2geek.packt.JSDP || {};
+com.o2geek.packt.JSDP.sudoChat = com.o2geek.packt.JSDP.sudoChat || {};
+
+
+com.o2geek.packt.JSDP.sudoChat = {
 		leadself : "Me: ",
 		leadcomputer : "Mac: ",
 		aSaid : ["This is a Cyber Chat"],
