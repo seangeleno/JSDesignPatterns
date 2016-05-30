@@ -14,13 +14,13 @@
 
 					_aSaid.push("<div>" + msg + "</div>");
 
-					var aSaidLength = _aSaid.length, 
+					var aSaidLength = _aSaid.length,
 							start = Math.max(aSaidLength - 6,0),
 							out = "";
 
 					for(var i=start; i<aSaidLength; i++){
 						out += _aSaid[i];
-					}	
+					}
 
 
 					$('.advert').html(out);
@@ -45,14 +45,14 @@
 				saySassyStuff:saySassyStuff
 
 		};
-	})(); 
+	})();
 
 	$(doc).ready(function(){
 		chatModule.talk("this is great");
 		chatModule.replayYesNo();
 		chatModule.saySassyStuff();
 	});
-
+	//defining chatModule if it doesn't exist
 	if(!win.chatModule) win.chatModule = chatModule;
 })(window, document,jQuery);
 
@@ -74,13 +74,13 @@ var chatModule = (function (){
 
 				aSaid.push("<div>" + msg + "</div>");
 
-				var aSaidLength = aSaid.length, 
+				var aSaidLength = aSaid.length,
 						start = Math.max(aSaidLength - 6,0),
 						out = "";
 
 				for(var i=start; i<aSaidLength; i++){
 					out += aSaid[i];
-				}	
+				}
 
 
 				$('.advert').html(out);
@@ -102,7 +102,7 @@ var chatModule = (function (){
 		}
 
 	};
-})(); 
+})();
 
 
 */
@@ -124,26 +124,21 @@ com.o2geek.packt.JSDP.sudoChat = {
 									"As long as we don’t die, this is gonna be one hell of a story.",
 									"She laughed, and the desert sang.",
 									"You’ve got about as much charm as a dead slug."],
-		
+
 		echo: function (msg){
 
 				this.aSaid.push("<div>" + msg + "</div>");
 
-				var aSaidLength = this.aSaid.length, 
+				var aSaidLength = this.aSaid.length,
 						start = Math.max(aSaidLength - 6,0),
 						out = "";
 
 				for(var i=start; i<aSaidLength; i++){
 					out += this.aSaid[i];
-				}	
+				}
 
 				$('.advert').html(out);
 				$('#talk span').text(msg);
 			}
 
 };*/
-
-
-
-
-
